@@ -1,3 +1,17 @@
 * {
    font-family: 'Poppins';
 }
+body {
+   overflow-x: hidden;
+   overflow-y: scroll;
+   height: 100vh;
+}
+
+html {
+   overflow-x: hidden;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+}

@@ -65,6 +65,37 @@ const Styles = makeStyles((styleProps) => ({
          display: 'unset',
       },
    },
+   Drawer: {
+      '& .MuiDrawer-paper': {
+         display: 'none',
+         minWidth: '50%',
+         [genMediaQuery('sm')]: {
+            display: 'unset',
+         },
+         [genMediaQuery('xs')]: {
+            minWidth: '80%',
+         },
+      },
+   },
+   DrawerHeader: {
+      padding: '10px 20px',
+   },
+   CloseIcon: {
+      '& svg': {
+         color: '#222',
+      },
+   },
+   DrawerSearchbar: {
+      boxShadow: 'none',
+   },
+   DrawerNav: {
+      textTransform: 'uppercase',
+      '& .border-pink-500': {
+         color: '#fff',
+         backgroundColor: (styleProps) =>
+            styleProps.theme.palette.pink,
+      },
+   },
 }));
 
 export default Styles;

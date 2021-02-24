@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core';
-import { genMediaQuery } from './reuseables/MediaQueries';
+import { genMediaQuery } from '../reuseables/MediaQueries';
 
 const styles = makeStyles((styleProps) => ({
    GridContainer: {
@@ -16,8 +16,7 @@ const styles = makeStyles((styleProps) => ({
    },
    ProfileDetails: {
       width: '70%',
-      margin: 'auto',
-      marginBottom: '30px',
+      margin: '30px auto',
       [genMediaQuery('sm')]: {
          width: '90%',
       },
@@ -52,7 +51,7 @@ const styles = makeStyles((styleProps) => ({
    ListItemContent: {
       display: 'flex',
       alignItems: 'center',
-      width: '70%',
+      width: '75%',
       margin: 'auto',
       height: '100%',
    },
@@ -131,6 +130,17 @@ const styles = makeStyles((styleProps) => ({
          transform: 'translate(-50%,-50%)',
          fontSize: 30,
          color: '#fff',
+      },
+   },
+   Section3B: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      alignItems: 'center',
+   },
+   Section3BListItem: {
+      width: '50%',
+      [genMediaQuery('sm')]: {
+         width: '100%',
       },
    },
 }));

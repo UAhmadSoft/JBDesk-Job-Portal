@@ -14,6 +14,7 @@ import {
 import { Close, Search as SearchIcon } from '@material-ui/icons';
 import { v4 as uuid } from 'uuid';
 import { Navigation } from 'react-minimal-side-navigation';
+import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 
 import { withRouter } from 'react-router-dom';
 

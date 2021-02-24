@@ -10,8 +10,8 @@ import {
    Drawer,
 } from '@material-ui/core';
 
-import Styles from '../../Styles/Candidate Styles/dashboard.styles';
-import image from '../../Assets/Images/profileImg.jpg';
+import Styles from '../../Styles/Company Styles/dashboard.styles';
+import image from '../../Assets/Images/companyImg.png';
 
 import {
    Palette as PaletteIcon,
@@ -36,7 +36,7 @@ import {
    Briefcase,
 } from 'react-feather';
 
-const CandidateDashboard = () => {
+const CompanyDashboard = () => {
    const theme = useTheme();
    const styleProps = {
       theme,
@@ -60,8 +60,8 @@ const CandidateDashboard = () => {
                   <div className={classes.ProfileSection}>
                      <img
                         style={{
-                           width: '100%',
                            marginBottom: 30,
+                           margin: 'auto',
                         }}
                         src={image}
                         alt='Profile Picture'
@@ -101,7 +101,7 @@ const CandidateDashboard = () => {
                            <div className={classes.ListIcon}>
                               <Edit />
                            </div>
-                           <div>Edit Profile</div>
+                           <div>Manage Jobs</div>
                         </div>
                      </li>
                      <li className={classes.NavItem}>
@@ -109,7 +109,7 @@ const CandidateDashboard = () => {
                            <div className={classes.ListIcon}>
                               <ResumeIcon />
                            </div>
-                           <div>Resume</div>
+                           <div>Applications</div>
                         </div>
                      </li>
                      <li className={classes.NavItem}>
@@ -117,17 +117,10 @@ const CandidateDashboard = () => {
                            <div className={classes.ListIcon}>
                               <FavoriteIcon />
                            </div>
-                           <div>Favourite</div>
+                           <div>Post New Job</div>
                         </div>
                      </li>
-                     <li className={classes.NavItem}>
-                        <div className={classes.ListItemContent}>
-                           <div className={classes.ListIcon}>
-                              <CheckBoxIcon />
-                           </div>
-                           <div>Applied Job</div>
-                        </div>
-                     </li>
+
                      <li className={classes.NavItem}>
                         <div className={classes.ListItemContent}>
                            <div className={classes.ListIcon}>
@@ -136,6 +129,7 @@ const CandidateDashboard = () => {
                            <div>Message</div>
                         </div>
                      </li>
+
                      <li className={classes.NavItem}>
                         <div className={classes.ListItemContent}>
                            <div className={classes.ListIcon}>
@@ -183,7 +177,7 @@ const CandidateDashboard = () => {
                            />
                         </div>
                         <div className={classes.Section1Details}>
-                           <h3>Luca Wallace</h3>
+                           <h3>Webstrot Technology</h3>
                            <ul style={{ display: 'inline-flex' }}>
                               <li
                                  style={{
@@ -224,6 +218,161 @@ const CandidateDashboard = () => {
                         </Button>
                      </div>
                   </Grid>
+
+                  <Grid item xs={12}>
+                     <List className={classes.Section3B}>
+                        <ListItem
+                           className={classes.Section3BListItem}
+                        >
+                           <Grid
+                              container
+                              style={{
+                                 border: '1px solid #e2e2e2e2',
+                              }}
+                              alignItems='center'
+                           >
+                              <Grid
+                                 item
+                                 xs={4}
+                                 sm={2}
+                                 md={4}
+                                 lg={2}
+                                 className={classes.Icon}
+                                 style={{
+                                    backgroundColor: '#FF9500',
+                                 }}
+                              >
+                                 <i class='fas fa-book'></i>
+                              </Grid>
+                              <Grid
+                                 item
+                                 xs={8}
+                                 style={{
+                                    paddingLeft: 30,
+                                 }}
+                              >
+                                 <ListItemText
+                                    primary='360'
+                                    secondary='Jobs Posted'
+                                 />
+                              </Grid>
+                           </Grid>
+                        </ListItem>
+                        <ListItem
+                           className={classes.Section3BListItem}
+                        >
+                           <Grid
+                              container
+                              style={{
+                                 border: '1px solid #e2e2e2e2',
+                              }}
+                              alignItems='center'
+                           >
+                              <Grid
+                                 item
+                                 xs={4}
+                                 sm={2}
+                                 md={4}
+                                 lg={2}
+                                 className={classes.Icon}
+                                 style={{
+                                    backgroundColor: '#FF5E3A',
+                                 }}
+                              >
+                                 <i class='fas fa-user'></i>
+                              </Grid>
+                              <Grid
+                                 item
+                                 xs={8}
+                                 style={{
+                                    paddingLeft: 30,
+                                 }}
+                              >
+                                 <ListItemText
+                                    primary='1608'
+                                    secondary='Shortlisted Resume'
+                                 />
+                              </Grid>
+                           </Grid>
+                        </ListItem>
+                        <ListItem
+                           className={classes.Section3BListItem}
+                        >
+                           <Grid
+                              container
+                              style={{
+                                 border: '1px solid #e2e2e2e2',
+                              }}
+                              alignItems='center'
+                           >
+                              <Grid
+                                 item
+                                 xs={4}
+                                 sm={2}
+                                 md={4}
+                                 lg={2}
+                                 className={classes.Icon}
+                                 style={{
+                                    backgroundColor: '#1FBBA6',
+                                 }}
+                              >
+                                 <i class='fas fa-eye'></i>
+                              </Grid>
+                              <Grid
+                                 item
+                                 xs={8}
+                                 style={{
+                                    paddingLeft: 30,
+                                 }}
+                              >
+                                 <ListItemText
+                                    primary='11200'
+                                    secondary='Total Page View'
+                                 />
+                              </Grid>
+                           </Grid>
+                        </ListItem>
+                        <ListItem
+                           className={classes.Section3BListItem}
+                        >
+                           <Grid
+                              container
+                              style={{
+                                 border: '1px solid #e2e2e2e2',
+                              }}
+                              alignItems='center'
+                           >
+                              <Grid
+                                 item
+                                 xs={4}
+                                 sm={2}
+                                 md={4}
+                                 lg={2}
+                                 className={classes.Icon}
+                                 style={{
+                                    backgroundColor: '#76C80E',
+                                 }}
+                              >
+                                 <i class='fas fa-envelope-open-text'></i>
+                              </Grid>
+                              <Grid
+                                 item
+                                 xs={8}
+                                 style={{
+                                    paddingLeft: 30,
+                                 }}
+                              >
+                                 <ListItemText
+                                    primary='11200'
+                                    secondary='Total Applications'
+                                 />
+                              </Grid>
+                           </Grid>
+                        </ListItem>
+                     </List>
+                  </Grid>
+
+                  <Grid item xs={12}></Grid>
                   <Grid
                      item
                      md={6}
@@ -322,7 +471,7 @@ const CandidateDashboard = () => {
                         </div>
                      </div>
                   </Grid>
-                  <Grid
+                  {/* <Grid
                      item
                      md={6}
                      xs={12}
@@ -333,105 +482,8 @@ const CandidateDashboard = () => {
                            Our Location
                         </h3>
                      </div>
-                     <List className={classes.Section3B}>
-                        <ListItem>
-                           <Grid
-                              container
-                              style={{
-                                 border: '1px solid #e2e2e2e2',
-                              }}
-                              alignItems='center'
-                           >
-                              <Grid
-                                 item
-                                 xs={4}
-                                 className={classes.Icon}
-                                 style={{
-                                    backgroundColor: '#FF9500',
-                                 }}
-                              >
-                                 <i class='fas fa-book'></i>
-                              </Grid>
-                              <Grid
-                                 item
-                                 xs={8}
-                                 style={{
-                                    paddingLeft: 30,
-                                 }}
-                              >
-                                 <ListItemText
-                                    primary='260'
-                                    secondary='Applied Jobs'
-                                 />
-                              </Grid>
-                           </Grid>
-                        </ListItem>
-                        <ListItem>
-                           <Grid
-                              container
-                              style={{
-                                 border: '1px solid #e2e2e2e2',
-                              }}
-                              alignItems='center'
-                           >
-                              <Grid
-                                 item
-                                 xs={4}
-                                 className={classes.Icon}
-                                 style={{
-                                    backgroundColor: '#1FBBA6',
-                                 }}
-                              >
-                                 <i class='fas fa-book'></i>
-                              </Grid>
-                              <Grid
-                                 item
-                                 xs={8}
-                                 style={{
-                                    paddingLeft: 30,
-                                 }}
-                              >
-                                 <ListItemText
-                                    primary='1608'
-                                    secondary='Favourite Jobs'
-                                 />
-                              </Grid>
-                           </Grid>
-                        </ListItem>
-                        <ListItem>
-                           <Grid
-                              container
-                              style={{
-                                 border: '1px solid #e2e2e2e2',
-                              }}
-                              alignItems='center'
-                           >
-                              <Grid
-                                 item
-                                 xs={4}
-                                 className={classes.Icon}
-                                 style={{
-                                    backgroundColor: '#76C80E',
-                                 }}
-                              >
-                                 <i class='fas fa-book'></i>
-                              </Grid>
-                              <Grid
-                                 item
-                                 xs={8}
-                                 style={{
-                                    paddingLeft: 30,
-                                 }}
-                              >
-                                 <ListItemText
-                                    primary='11200'
-                                    secondary='Companies Viewed'
-                                 />
-                              </Grid>
-                           </Grid>
-                        </ListItem>
-                     </List>
-                  </Grid>
+                     
+                  </Grid> */}
                   <Grid item xs={12} className={classes.Section4}>
                      <h3 className={classes.Section2Header}>
                         Recent Activity
@@ -518,4 +570,4 @@ const CandidateDashboard = () => {
    );
 };
 
-export default CandidateDashboard;
+export default CompanyDashboard;

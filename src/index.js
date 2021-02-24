@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import 'react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css';
 
 import { BrowserRouter } from 'react-router-dom';
 

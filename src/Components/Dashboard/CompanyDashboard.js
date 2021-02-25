@@ -13,6 +13,8 @@ import {
 import Styles from '../../Styles/Company Styles/dashboard.styles';
 import image from '../../Assets/Images/companyImg.png';
 
+import Chart from './Chart/Chart';
+
 import {
    Palette as PaletteIcon,
    InsertDriveFile as ResumeIcon,
@@ -372,7 +374,9 @@ const CompanyDashboard = () => {
                      </List>
                   </Grid>
 
-                  <Grid item xs={12}></Grid>
+                  <Grid item xs={12} className={classes.ChartGrid}>
+                     <Chart />
+                  </Grid>
                   <Grid
                      item
                      md={6}

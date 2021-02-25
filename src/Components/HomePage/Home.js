@@ -321,8 +321,28 @@ const Home = (props) => {
                         xs={12}
                         className={classes.IconDiv}
                      >
-                        <div className={classes.IconDivChild}>
-                           <div className={classes.TechIcon}></div>
+                        <div
+                           className={classes.IconDivChild}
+                           onMouseEnter={() =>
+                              setState({
+                                 ...state,
+                                 svg2: true,
+                              })
+                           }
+                           onMouseLeave={() =>
+                              setState({
+                                 ...state,
+                                 svg2: false,
+                              })
+                           }
+                        >
+                           <div
+                              className={
+                                 state.svg2 === true
+                                    ? classes.TechIconHover
+                                    : classes.TechIcon
+                              }
+                           ></div>
                            <h4>Technology</h4>
                            <p>(140 Jobs)</p>
                         </div>
@@ -334,8 +354,28 @@ const Home = (props) => {
                         xs={12}
                         className={classes.IconDiv}
                      >
-                        <div className={classes.IconDivChild}>
-                           <div className={classes.AccountIcon}></div>
+                        <div
+                           className={classes.IconDivChild}
+                           onMouseEnter={() =>
+                              setState({
+                                 ...state,
+                                 svg3: true,
+                              })
+                           }
+                           onMouseLeave={() =>
+                              setState({
+                                 ...state,
+                                 svg3: false,
+                              })
+                           }
+                        >
+                           <div
+                              className={
+                                 state.svg3 === true
+                                    ? classes.AccountIconHover
+                                    : classes.AccountIcon
+                              }
+                           ></div>
                            <h4>Accounting</h4>
                            <p>(0 Jobs)</p>
                         </div>
@@ -347,8 +387,28 @@ const Home = (props) => {
                         xs={12}
                         className={classes.IconDiv}
                      >
-                        <div className={classes.IconDivChild}>
-                           <div className={classes.MedicalIcon}></div>
+                        <div
+                           className={classes.IconDivChild}
+                           onMouseEnter={() =>
+                              setState({
+                                 ...state,
+                                 svg4: true,
+                              })
+                           }
+                           onMouseLeave={() =>
+                              setState({
+                                 ...state,
+                                 svg4: false,
+                              })
+                           }
+                        >
+                           <div
+                              className={
+                                 state.svg4 === true
+                                    ? classes.MedicalIconHover
+                                    : classes.MedicalIcon
+                              }
+                           ></div>
                            <h4>Medical</h4>
                            <p>(50 Jobs)</p>
                         </div>
@@ -369,9 +429,27 @@ const Home = (props) => {
                         xs={12}
                         className={classes.IconDiv}
                      >
-                        <div className={classes.IconDivChild}>
+                        <div
+                           className={classes.IconDivChild}
+                           onMouseEnter={() =>
+                              setState({
+                                 ...state,
+                                 svg5: true,
+                              })
+                           }
+                           onMouseLeave={() =>
+                              setState({
+                                 ...state,
+                                 svg5: false,
+                              })
+                           }
+                        >
                            <div
-                              className={classes.BuildingIcon}
+                              className={
+                                 state.svg5 === true
+                                    ? classes.BuildingIconHover
+                                    : classes.BuildingIcon
+                              }
                            ></div>
                            <h4>Government</h4>
                            <p>(145021 Jobs)</p>
@@ -384,8 +462,28 @@ const Home = (props) => {
                         xs={12}
                         className={classes.IconDiv}
                      >
-                        <div className={classes.IconDivChild}>
-                           <div className={classes.NewsIcon}></div>
+                        <div
+                           className={classes.IconDivChild}
+                           onMouseEnter={() =>
+                              setState({
+                                 ...state,
+                                 svg6: true,
+                              })
+                           }
+                           onMouseLeave={() =>
+                              setState({
+                                 ...state,
+                                 svg6: false,
+                              })
+                           }
+                        >
+                           <div
+                              className={
+                                 state.svg6 === true
+                                    ? classes.NewsIconHover
+                                    : classes.NewsIcon
+                              }
+                           ></div>
                            <h4>Media and News</h4>
                            <p>(1450 Jobs)</p>
                         </div>
@@ -397,9 +495,27 @@ const Home = (props) => {
                         xs={12}
                         className={classes.IconDiv}
                      >
-                        <div className={classes.IconDivChild}>
+                        <div
+                           className={classes.IconDivChild}
+                           onMouseEnter={() =>
+                              setState({
+                                 ...state,
+                                 svg7: true,
+                              })
+                           }
+                           onMouseLeave={() =>
+                              setState({
+                                 ...state,
+                                 svg7: false,
+                              })
+                           }
+                        >
                            <div
-                              className={classes.RestaurantIcon}
+                              className={
+                                 state.svg7 === true
+                                    ? classes.RestaurantIconHover
+                                    : classes.RestaurantIcon
+                              }
                            ></div>
                            <h4>Restaurants</h4>
                            <p>(1450 Jobs)</p>

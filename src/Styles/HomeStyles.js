@@ -184,7 +184,7 @@ const styles = makeStyles((styleProps) => ({
       width: 40,
       height: 40,
    },
-   MedicalHover: {
+   MedicalIconHover: {
       backgroundImage: `url(${AidIconActive})`,
       width: 40,
       height: 40,
@@ -204,6 +204,11 @@ const styles = makeStyles((styleProps) => ({
       width: 40,
       height: 40,
    },
+   NewsIconHover: {
+      backgroundImage: `url(${NewsIconActive})`,
+      width: 40,
+      height: 40,
+   },
    RestaurantIcon: {
       backgroundImage: `url(${RestaurantIcon})`,
       width: 40,
@@ -211,6 +216,16 @@ const styles = makeStyles((styleProps) => ({
    },
    AccountIcon: {
       backgroundImage: `url(${BarsIcon})`,
+      width: 40,
+      height: 40,
+   },
+   RestaurantIconHover: {
+      backgroundImage: `url(${RestaurantIconActive})`,
+      width: 40,
+      height: 40,
+   },
+   AccountIconHover: {
+      backgroundImage: `url(${BarsIconActive})`,
       width: 40,
       height: 40,
    },

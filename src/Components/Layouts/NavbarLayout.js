@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Navbar from '../Reuseables/Navbar';
+import Footer from '../Reuseables/Footer';
 
 const NavbarLayout = ({
    component: Component,
@@ -12,6 +13,7 @@ const NavbarLayout = ({
       <>
          <Navbar />
          <Route exact component={Component} path={Path} {...rest} />
+         <Footer />
       </>
    );
 };

@@ -8,6 +8,7 @@ import { ThemeProvider } from '@material-ui/core';
 import theme from './Styles/Theme';
 import CompanyRouter from './Routers/CompanyRouter';
 import NavBarLayout from './Components/Layouts/NavbarLayout';
+import JobsRouter from './Routers/JobsRouter';
 
 const App = () => {
    return (
@@ -15,6 +16,7 @@ const App = () => {
          <Switch>
             <Route path='/candidate' component={CandidateRouter} />
             <Route path='/company' component={CompanyRouter} />
+            <Route path='/jobs' component={JobsRouter} />
             <NavBarLayout path='/' component={Home} />
          </Switch>
       </ThemeProvider>

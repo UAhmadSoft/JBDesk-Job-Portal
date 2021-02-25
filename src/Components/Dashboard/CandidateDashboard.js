@@ -350,7 +350,7 @@ const CandidateDashboard = () => {
                                     backgroundColor: '#FF9500',
                                  }}
                               >
-                                 <i class='fas fa-book'></i>
+                                 <i className='fas fa-book'></i>
                               </Grid>
                               <Grid
                                  item
@@ -382,7 +382,7 @@ const CandidateDashboard = () => {
                                     backgroundColor: '#1FBBA6',
                                  }}
                               >
-                                 <i class='fas fa-book'></i>
+                                 <i className='fas fa-book'></i>
                               </Grid>
                               <Grid
                                  item
@@ -414,7 +414,7 @@ const CandidateDashboard = () => {
                                     backgroundColor: '#76C80E',
                                  }}
                               >
-                                 <i class='fas fa-book'></i>
+                                 <i className='fas fa-book'></i>
                               </Grid>
                               <Grid
                                  item

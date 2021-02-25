@@ -37,6 +37,7 @@ const PageHeader = ({ title, pathName }) => {
                style={{
                   display: 'flex',
                   alignItems: 'center',
+                  justifyContent: 'flex-end',
                }}
             >
                <ul
@@ -68,4 +69,4 @@ const PageHeader = ({ title, pathName }) => {
    );
 };
 
-export default withRouter(withStyles(Styles)(PageHeader));
+export default withRouter(PageHeader);

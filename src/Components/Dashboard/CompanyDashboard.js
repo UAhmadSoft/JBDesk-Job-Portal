@@ -8,11 +8,16 @@ import {
    useTheme,
    ListItemText,
    Drawer,
+   Box,
 } from '@material-ui/core';
-
+import PersonIcon from '@material-ui/icons/Person';
 import Styles from '../../Styles/Company Styles/dashboard.styles';
 import image from '../../Assets/Images/companyImg.png';
 
+import rc1Img from '../../Assets/Images/rc1.png';
+import rc2Img from '../../Assets/Images/rc2.png';
+import rc3Img from '../../Assets/Images/rc3.png';
+import rc4Img from '../../Assets/Images/rc4.png';
 import Chart from './Chart/Chart';
 
 import {
@@ -385,21 +390,29 @@ const CompanyDashboard = () => {
                   >
                      <div className={classes.Section2A}>
                         <h3 className={classes.Section2Header}>
-                           Basic Information
+                           Company Overview
                         </h3>
                         <List>
                            <ListItem className={classes.ListItem}>
                               <ListItemAvatar>
-                                 <CalenderIcon />
+                                 <CalenderIcon
+                                    style={{
+                                       color: '#ff5353',
+                                    }}
+                                 />
                               </ListItemAvatar>
                               <ListItemText
-                                 primary='Job Description :'
-                                 secondary='Graphic Designer'
+                                 primary='Categories :'
+                                 secondary='Desgin and Creative'
                               />
                            </ListItem>
                            <ListItem className={classes.ListItem}>
                               <ListItemAvatar>
-                                 <LocationIcon />
+                                 <LocationIcon
+                                    style={{
+                                       color: '#ff5353',
+                                    }}
+                                 />
                               </ListItemAvatar>
                               <ListItemText
                                  primary='Location :'
@@ -408,16 +421,24 @@ const CompanyDashboard = () => {
                            </ListItem>
                            <ListItem className={classes.ListItem}>
                               <ListItemAvatar>
-                                 <InfoIco />
+                                 <InfoIco
+                                    style={{
+                                       color: '#ff5353',
+                                    }}
+                                 />
                               </ListItemAvatar>
                               <ListItemText
-                                 primary='Phone :'
-                                 secondary='0312312312'
+                                 primary='Hotline :'
+                                 secondary='1021234112'
                               />
                            </ListItem>
                            <ListItem className={classes.ListItem}>
                               <ListItemAvatar>
-                                 <EmailIcon />
+                                 <EmailIcon
+                                    style={{
+                                       color: '#ff5353',
+                                    }}
+                                 />
                               </ListItemAvatar>
                               <ListItemText
                                  primary='Email :'
@@ -426,7 +447,24 @@ const CompanyDashboard = () => {
                            </ListItem>
                            <ListItem className={classes.ListItem}>
                               <ListItemAvatar>
-                                 <PublicIcon />
+                                 <PersonIcon
+                                    style={{
+                                       color: '#ff5353',
+                                    }}
+                                 />
+                              </ListItemAvatar>
+                              <ListItemText
+                                 primary='Company Size :'
+                                 secondary='20-50'
+                              />
+                           </ListItem>
+                           <ListItem className={classes.ListItem}>
+                              <ListItemAvatar>
+                                 <PublicIcon
+                                    style={{
+                                       color: '#ff5353',
+                                    }}
+                                 />
                               </ListItemAvatar>
                               <ListItemText
                                  primary='Website :'
@@ -442,7 +480,7 @@ const CompanyDashboard = () => {
                         <div
                            style={{
                               display: 'flex',
-                              padding: '0px 20px',
+                              padding: '20px 20px',
                               flexWrap: 'wrap',
                            }}
                         >
@@ -488,48 +526,316 @@ const CompanyDashboard = () => {
                      </div>
                      
                   </Grid> */}
-                  <Grid item xs={12} className={classes.Section4}>
-                     <h3 className={classes.Section2Header}>
-                        Recent Activity
-                     </h3>
-                     <List>
-                        <ListItem className={classes.ListItem}>
-                           <ListItemAvatar>
-                              <LeftIcon />
-                           </ListItemAvatar>
-                           <ListItemText
-                              primary='Our Resume Updated!Dobrick Published An Article :'
-                              secondary='5 hours ago'
-                           />
-                        </ListItem>
-                        <ListItem className={classes.ListItem}>
-                           <ListItemAvatar>
-                              <LeftIcon />
-                           </ListItemAvatar>
-                           <ListItemText
-                              secondary='5 hours ago'
-                              primary='Dobrick Published An Article :'
-                           />
-                        </ListItem>
-                        <ListItem className={classes.ListItem}>
-                           <ListItemAvatar>
-                              <LeftIcon />
-                           </ListItemAvatar>
-                           <ListItemText
-                              primary='Someone Bookmarked You :'
-                              secondary='5 hours ago'
-                           />
-                        </ListItem>
-                        <ListItem className={classes.ListItem}>
-                           <ListItemAvatar>
-                              <LeftIcon />
-                           </ListItemAvatar>
-                           <ListItemText
-                              primary='Your Resume Updated! :'
-                              secondary='5 hours ago'
-                           />
-                        </ListItem>
-                     </List>
+                  <Grid
+                     item
+                     xs={12}
+                     className={classes.Section5GridMain}
+                  >
+                     <Grid
+                        container
+                        className={classes.Section5GridContainer}
+                     >
+                        <Grid
+                           item
+                           md={7}
+                           sm={12}
+                           className={classes.Section5A}
+                        >
+                           <h3 className={classes.Section2Header}>
+                              Recent Applicants
+                           </h3>
+                           <List className={classes.ListBorder}>
+                              <ListItem
+                                 className={`${classes.ListItem} ${classes.ListItemDivider}`}
+                              >
+                                 <Grid container>
+                                    <Grid
+                                       item
+                                       xs={12}
+                                       sm={8}
+                                       style={{
+                                          display: 'flex',
+                                          justifyContent:
+                                             'space-evenly',
+                                       }}
+                                    >
+                                       <div>
+                                          <img src={rc1Img} alt='' />
+                                       </div>
+                                       <Box
+                                          display='flex'
+                                          flexDirection='column'
+                                          alignItems='flex-start'
+                                          justifyContent='center'
+                                       >
+                                          <h5>Aradya S.</h5>
+                                          <p
+                                             style={{
+                                                color: '#777777',
+                                             }}
+                                          >
+                                             App Designer
+                                          </p>
+                                       </Box>
+                                    </Grid>
+                                    <Grid
+                                       item
+                                       xs={12}
+                                       sm={4}
+                                       style={{
+                                          display: 'flex',
+                                          alignItems: 'center',
+                                          justifyContent: 'flex-end',
+                                       }}
+                                    >
+                                       <Button
+                                          variant='contained'
+                                          className={
+                                             classes.ProfileBtn
+                                          }
+                                          style={{
+                                             borderRadius: 0,
+                                             marginLeft: 'unset',
+                                          }}
+                                       >
+                                          Send
+                                       </Button>
+                                    </Grid>
+                                 </Grid>
+                              </ListItem>
+                              <ListItem
+                                 className={`${classes.ListItem} ${classes.ListItemDivider}`}
+                              >
+                                 <Grid container>
+                                    <Grid
+                                       item
+                                       xs={12}
+                                       sm={8}
+                                       style={{
+                                          display: 'flex',
+                                          justifyContent:
+                                             'space-evenly',
+                                       }}
+                                    >
+                                       <div>
+                                          <img src={rc2Img} alt='' />
+                                       </div>
+                                       <Box
+                                          display='flex'
+                                          flexDirection='column'
+                                          alignItems='flex-start'
+                                          justifyContent='center'
+                                       >
+                                          <h5>Aradya S.</h5>
+                                          <p
+                                             style={{
+                                                color: '#777777',
+                                             }}
+                                          >
+                                             App Designer
+                                          </p>
+                                       </Box>
+                                    </Grid>
+                                    <Grid
+                                       item
+                                       xs={12}
+                                       sm={4}
+                                       style={{
+                                          display: 'flex',
+                                          alignItems: 'center',
+                                          justifyContent: 'flex-end',
+                                       }}
+                                    >
+                                       <Button
+                                          variant='contained'
+                                          className={
+                                             classes.ProfileBtn
+                                          }
+                                          style={{
+                                             borderRadius: 0,
+                                             marginLeft: 'unset',
+                                          }}
+                                       >
+                                          Send
+                                       </Button>
+                                    </Grid>
+                                 </Grid>
+                              </ListItem>
+                              <ListItem
+                                 className={`${classes.ListItem} ${classes.ListItemDivider}`}
+                              >
+                                 <Grid container>
+                                    <Grid
+                                       item
+                                       xs={12}
+                                       sm={8}
+                                       style={{
+                                          display: 'flex',
+                                          justifyContent:
+                                             'space-evenly',
+                                       }}
+                                    >
+                                       <div>
+                                          <img src={rc3Img} alt='' />
+                                       </div>
+                                       <Box
+                                          display='flex'
+                                          flexDirection='column'
+                                          alignItems='flex-start'
+                                          justifyContent='center'
+                                       >
+                                          <h5>Aradya S.</h5>
+                                          <p
+                                             style={{
+                                                color: '#777777',
+                                             }}
+                                          >
+                                             App Designer
+                                          </p>
+                                       </Box>
+                                    </Grid>
+                                    <Grid
+                                       item
+                                       xs={12}
+                                       sm={4}
+                                       style={{
+                                          display: 'flex',
+                                          alignItems: 'center',
+                                          justifyContent: 'flex-end',
+                                       }}
+                                    >
+                                       <Button
+                                          variant='contained'
+                                          className={
+                                             classes.ProfileBtn
+                                          }
+                                          style={{
+                                             borderRadius: 0,
+                                             marginLeft: 'unset',
+                                          }}
+                                       >
+                                          Send
+                                       </Button>
+                                    </Grid>
+                                 </Grid>
+                              </ListItem>
+                              <ListItem
+                                 className={`${classes.ListItem}`}
+                              >
+                                 <Grid container>
+                                    <Grid
+                                       item
+                                       xs={12}
+                                       sm={8}
+                                       style={{
+                                          display: 'flex',
+                                          justifyContent:
+                                             'space-evenly',
+                                       }}
+                                    >
+                                       <div>
+                                          <img src={rc4Img} alt='' />
+                                       </div>
+                                       <Box
+                                          display='flex'
+                                          flexDirection='column'
+                                          alignItems='flex-start'
+                                          justifyContent='center'
+                                       >
+                                          <h5>Aradya S.</h5>
+                                          <p
+                                             style={{
+                                                color: '#777777',
+                                             }}
+                                          >
+                                             App Designer
+                                          </p>
+                                       </Box>
+                                    </Grid>
+                                    <Grid
+                                       item
+                                       xs={12}
+                                       sm={4}
+                                       style={{
+                                          display: 'flex',
+                                          alignItems: 'center',
+                                          justifyContent: 'flex-end',
+                                       }}
+                                    >
+                                       <Button
+                                          variant='contained'
+                                          className={
+                                             classes.ProfileBtn
+                                          }
+                                          style={{
+                                             borderRadius: 0,
+                                             marginLeft: 'unset',
+                                          }}
+                                       >
+                                          Send
+                                       </Button>
+                                    </Grid>
+                                 </Grid>
+                              </ListItem>
+                           </List>
+                        </Grid>
+                        <Grid
+                           item
+                           md={5}
+                           sm={12}
+                           className={classes.Section5B}
+                        >
+                           <h3 className={classes.Section2Header}>
+                              Recent Applicants
+                           </h3>
+                           <List className={classes.ListBorder}>
+                              <ListItem
+                                 className={`${classes.ListItem} ${classes.ListItemDivider}`}
+                              >
+                                 <ListItemAvatar>
+                                    <LeftIcon />
+                                 </ListItemAvatar>
+                                 <ListItemText
+                                    primary='Dobrick Published An Article :'
+                                    secondary='5 hours ago'
+                                 />
+                              </ListItem>
+                              <ListItem
+                                 className={`${classes.ListItem} ${classes.ListItemDivider}`}
+                              >
+                                 <ListItemAvatar>
+                                    <LeftIcon />
+                                 </ListItemAvatar>
+                                 <ListItemText
+                                    secondary='5 hours ago'
+                                    primary='Dobrick Published An Article :'
+                                 />
+                              </ListItem>
+                              <ListItem
+                                 className={`${classes.ListItem} ${classes.ListItemDivider}`}
+                              >
+                                 <ListItemAvatar>
+                                    <LeftIcon />
+                                 </ListItemAvatar>
+                                 <ListItemText
+                                    primary='Someone Bookmarked You :'
+                                    secondary='5 hours ago'
+                                 />
+                              </ListItem>
+                              <ListItem
+                                 className={`${classes.ListItem}`}
+                              >
+                                 <ListItemAvatar>
+                                    <LeftIcon />
+                                 </ListItemAvatar>
+                                 <ListItemText
+                                    primary='Your Resume Updated! :'
+                                    secondary='5 hours ago'
+                                 />
+                              </ListItem>
+                           </List>
+                        </Grid>
+                     </Grid>
                   </Grid>
                </Grid>
             </Grid>

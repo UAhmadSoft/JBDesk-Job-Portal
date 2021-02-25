@@ -68,6 +68,10 @@ const styles = makeStyles((styleProps) => ({
       padding: 25,
       display: 'flex',
       alignItems: 'center',
+      flexWrap: 'wrap',
+      [genMediaQuery('xs')]: {
+         minHeight: 300,
+      },
    },
 
    Section1Details: {
@@ -93,11 +97,23 @@ const styles = makeStyles((styleProps) => ({
       padding: 20,
       marginTop: 0,
    },
+   ListBorder: {
+      border: '1px solid #ccc',
+   },
    ListItem: {
       color: '#222222',
       '& svg': {
          color: (styleProps) => styleProps.theme.palette.pink,
       },
+      '& .MuiListItemAvatar-root': {
+         minWidth: 40,
+      },
+      '& .MuiListItem-gutters': {
+         padding: '20px 16px',
+      },
+   },
+   ListItemDivider: {
+      borderBottom: '1px solid #ccc',
    },
    ListAvatar: {
       position: 'relative',
@@ -142,6 +158,12 @@ const styles = makeStyles((styleProps) => ({
       [genMediaQuery('sm')]: {
          width: '100%',
       },
+   },
+   Section5A: {
+      padding: 15,
+   },
+   Section5B: {
+      padding: 15,
    },
 }));
 
